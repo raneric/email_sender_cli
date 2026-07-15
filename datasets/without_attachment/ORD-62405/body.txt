@@ -1,0 +1,14 @@
+Hello,
+
+We have identified several issues while inspecting the products associated with order ORD-62405:
+
+For the Pressure Infusion Bag – ref: MED-PIB-001, we ordered a total of 278 units under order document PO8161 and PO7993, but none of these units were included in the delivery.
+For the Gauze Sponge 2x2 – ref: MED-GAU-002, the unit received was labeled as a 2x2-inch sponge, but the enclosed product measures 4x4 inches. In addition, the sterile packaging appears to be partially open, so we cannot approve the item for use.
+Both products are associated with lot LOT-0262-A.
+
+Could you please investigate these discrepancies and provide an update regarding replacement and delivery arrangements as soon as possible?
+
+Best regards,
+
+Jessica Thompson
+Regulatory Compliance Department
