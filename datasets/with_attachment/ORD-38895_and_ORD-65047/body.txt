@@ -1,0 +1,20 @@
+Hello,
+
+We have just completed our incoming inspection for the products tied to orders ORD-38895 and ORD-65047, and we found a few issues that need your attention.
+
+For ORD-38895, the PICC Line Catheter (MED-PICC-001) arrived in sealed cartons, but the outer labels reference a different catheter length than what was ordered, and the lot stickers on several boxes appear to have been reprinted over earlier markings. Because this creates traceability concerns, we have quarantined the shipment pending clarification.
+
+Also for ORD-38895, the Luer Lock Syringe 3mL (MED-LLS-003) was not packaged as expected. Instead of standard sterile trays, the syringes were bundled in loose sleeves, and a small portion of the shipment showed minor plunger resistance during sample checks. This makes the lot unsuitable for immediate distribution.
+
+For ORD-65047, the Angiographic Catheter 6Fr (MED-ANG-006) was received with an unusual bend memory in the tubing, causing it to curl back after unpacking. Additionally, one of the sterile barrier pouches had a faint tear near the seal edge, which may compromise product integrity.
+
+Could you please review these discrepancies and advise on next steps, including replacement or credit options? We would appreciate a prompt response so we can resolve the matter without delaying our internal receiving process.
+
+Best regards,
+-------------------------
+Bill French
+Daytona Transportation
+MediSupply International LLC
+
+Phone: (386) 258-4677 ext. 50540
+Email: medi_supply@test.local
