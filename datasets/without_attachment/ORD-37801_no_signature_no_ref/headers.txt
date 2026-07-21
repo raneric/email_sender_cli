@@ -1,0 +1,4 @@
+TO="receiver@test.local"
+FROM_NAME="Kitty Jane"
+FROM="kitty@gmail.com"
+SUBJECT="Product Issue Report"

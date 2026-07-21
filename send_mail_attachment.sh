@@ -3,21 +3,63 @@
 set -euo pipefail
 
 # ==========================
-# Configuration
+# Parse arguments
 # ==========================
-SMTP_SERVER="localhost"
-SMTP_PORT="587"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+CONFIG_FILE="$SCRIPT_DIR/config.sh"
+HEADERS_FILE=""
 
-USERNAME="test@test.local"
-PASSWORD="password123"
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -c|--config)
+            CONFIG_FILE="$2"
+            shift 2
+            ;;
+        --headers)
+            HEADERS_FILE="$2"
+            shift 2
+            ;;
+        --)
+            shift
+            break
+            ;;
+        -*)
+            echo "Unknown option: $1"
+            exit 1
+            ;;
+        *)
+            break
+            ;;
+    esac
+done
 
-FROM_NAME="Test Sender"
-FROM="test@test.local"
-TO="receiver@test.local"
-SUBJECT="Product issue detected"
+# ==========================
+# Load configuration
+# ==========================
+if [[ ! -f "$CONFIG_FILE" ]]; then
+    echo "Config file not found: $CONFIG_FILE"
+    exit 1
+fi
+# shellcheck source=/dev/null
+source "$CONFIG_FILE"
 
+# ==========================
+# Load per-dataset headers (overrides defaults)
+# ==========================
+if [[ -n "$HEADERS_FILE" ]]; then
+    if [[ ! -f "$HEADERS_FILE" ]]; then
+        echo "Headers file not found: $HEADERS_FILE"
+        exit 1
+    fi
+    # shellcheck source=/dev/null
+    source "$HEADERS_FILE"
+fi
+
+# ==========================
+# Validate arguments
+# ==========================
 if [[ $# -lt 2 ]]; then
-    echo "Usage: $0 <body_file> <attachment1> [attachment2 ...]"
+    echo "Usage: $0 [-c|--config <file>] [--headers <file>] <body_file> <attachment1> [attachment2 ...]"
     exit 1
 fi
 
