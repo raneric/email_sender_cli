@@ -1,0 +1,4 @@
+TO="receiver@test.local"
+FROM_NAME="Daniel Ramirez"
+FROM="daniel.ramirez@advanced-healthcare.com"
+SUBJECT="Product issues"

@@ -1,0 +1,4 @@
+TO="receiver@test.local"
+FROM_NAME="Bill French"
+FROM="bill_french@medi_supply.com"
+SUBJECT="Product issues"
